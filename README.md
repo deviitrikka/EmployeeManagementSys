@@ -1,14 +1,17 @@
 # Employee Management System
 
-This is a Spring Boot application for managing employees. It provides functionalities to add, update, delete, and view employee details.
+This is a Spring Boot application for managing employees. It provides
+functionalities to add, update, delete, and view employee details.
 
 ## Features
+
 - Add new employees
 - Update existing employee details
 - Delete employees
 - View employee list
 
 ## Prerequisites
+
 - Java 17 or higher
 - Maven 3.8 or higher
 - Spring Boot 2.7 or higher
@@ -31,25 +34,49 @@ This is a Spring Boot application for managing employees. It provides functional
    mvn spring-boot:run
    ```
 
-4. Access the application:
-   Open your browser and navigate to `http://localhost:8080`.
+4. Access the application: Open your browser and navigate to
+   `http://localhost:8080`.
 
 ## Project Structure
+
 ```
 employee-mng/
+├── .gitignore
+├── .gitattributes
+├── .mvn/
+│   └── wrapper/
+│       ├── maven-wrapper.jar
+│       └── maven-wrapper.properties
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── README.md
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com.example.employee_mng/
-│   │   │       └── EmployeeMngApplication.java
+│   │   │   └── com/example/employee_mng/
+│   │   │       ├── Employee.java
+│   │   │       ├── EmployeeMngApplication.java
+│   │   │       ├── EmployeeService.java
+│   │   │       ├── EmployeeServiceImplement.java
+│   │   │       ├── EmpController.java
+│   │   │       ├── entity/
+│   │   │       │   └── EmployeeEntity.java
+│   │   │       └── repository/
+│   │   │           └── EmployeeRepository.java
 │   │   └── resources/
-│   │       └── application.properties
-├── pom.xml
-└── README.md
+│   │       ├── application.properties
+│   └── test/
+│       └── java/
+│           └── com/example/employee_mng/
+│               └── EmployeeMngApplicationTests.java
+└── target/
 ```
 
 ## Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
+
 This project is licensed under the MIT License.
